@@ -2,11 +2,61 @@ body, html {
     width: 100vw;
     height: 100vh;
     margin: 0;
-    background-color: rgb(73, 255, 152);
+    background-color: #C0C0C0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .layout {
     height: 100%;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.mainBox {
+    background-color: #E18A07;
+    height: 500px;
+    width: 500px;
+    border-radius: 10px; 
+    display: grid;
+    grid-template-rows: 0.4fr 3fr;
+}
+
+.header {
+    text-align: center;
+}
+
+.formDiv {
+    height: 100%;
+}
+
+form {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    padding: 0 20% 0 20%;
+}
+
+form > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.footer {
+    grid-area: 6 / 1 / 7 / 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submitBtn {
+    height: 40px;
+    width: 100px;
+    border-radius: 10px;
+    border: 0px;
+    background-color: #b0acac;
+}
